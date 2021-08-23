@@ -1,1 +1,5 @@
-<div>product</div>
+<script>
+	export let id;
+</script>
+
+<div>product {id}</div>

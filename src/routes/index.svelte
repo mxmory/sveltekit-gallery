@@ -18,9 +18,9 @@
 	<div>
 		<Route path="/" component={Home} />
 		<Route path="products" component={Products} />
-		<Route path="products/:id" component={Product} />
+		<Route path="products/:id" let:params>
+			<Product id={params.id} />
+		</Route>
 		<Route path="about" component={About} />
 	</div>
 </Router>
-
-<!-- https://api.artic.edu/api/v1/artworks -->
